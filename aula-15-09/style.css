@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-gray-100: #f1efef;
+    --color-gray-200: #5f5959;
+    --color-gray-300: #0d0d0d;
+
+    --color-primary: #5f5fce;
+    --color-red: #c41b1b;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+.btn-login{
+    border-radius: 16px;
+    height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+main{
+   background-color: var(--color-primary);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 32px;
+   border-radius: 16px;
+   position: relative;
+   filter: drop-shadow(11px 14px 5px black);
+}
+.btn-close{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    padding: 4px;
+    font-weight: 800;
+}
+.btn-close:hover{
+    color: var(--color-red);
+}
+h1{
+    color: var(--color-gray-300);
+    font-weight: 700;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+}
+form div label{
+    color: var(--color-gray-100);
+    font-weight: 500;
+}
+.btn-login:hover{
+    color: var(--color-gray-200);
+    background-color: var(--color-gray-300);
+    font-weight: 800;
+}
+input{
+    outline: none;
+    border-radius: 8px;
+    height: 32px;
+    padding-left: 8px;
+    border: none;
+}
+
