@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+li,ul{
+    list-style: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+ul{
+    border-radius: 16px;
+    background-color: #e5e0e0;
+    padding: 16px;
+}
+
+#products li{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    box-shadow: 1px 2px 2px 3px black;
+    background-color: white;
+}
+#products li p {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+.btn-add{
+    padding: 6px 12px;
+    border-radius: 32px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.btn-add:hover{
+    transform: scale(1.05);
+}

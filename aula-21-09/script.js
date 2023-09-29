@@ -166,14 +166,14 @@
 //FAÇA UMA FUNÇÃO QUE O USUÁRIO ESCOLHA A OPERAÇÃO 
 //MATEMÁTICA / OU + OU - OU *
 
-function matematica(operacao, numero1, numero2){
+// function matematica(operacao, numero1, numero2){
 
-    if (operacao = "A"){
-        const result = parseInt(numero1) * parseInt(numero2) 
-    }
-    else if {}
+//     if (operacao = "A"){
+//         const result = parseInt(numero1) * parseInt(numero2) 
+//     }
+//     else if {}
 
 
-    const soma = parseInt(numero1) + parseInt(numero2)   
-    return alert(`A soma de ${numero1} + ${numero2} é: ${soma}`)
-}
+//     const soma = parseInt(numero1) + parseInt(numero2)   
+//     return alert(`A soma de ${numero1} + ${numero2} é: ${soma}`)
+// }
