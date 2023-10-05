@@ -101,13 +101,15 @@ renderProducts(listProducts)
 let cartList = []
 function addToCart(item){
     // console.log(cartList.length)
+    const newItem = {...item}
     if(cartList.length==0){
-        item.id = 1
+        newItem.id = 1
     }else{
-        item.id = cartList[cartList.length-1].id +1
+        newItem.id = parseInt(cartList[cartList.length-1].id) +1
+        // console.log(item.id)
     }
-    cartList.push(item)
-    console.log(item)
+    cartList.push(newItem)
+    console.log(cartList)
     // const index =cartList[cartList.length]
     renderCart(cartList)
 }
@@ -132,7 +134,8 @@ function renderCart(list=[]){
 }
 function removeToCart(item){
     const index = cartList.findIndex((cart)=>cart.id == item.id)
-    cartList.splice(index,1)
+     cartList.splice(index,1)
+    
     renderCart(cartList)
     console.log(cartList)
 }
