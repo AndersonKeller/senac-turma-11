@@ -111,6 +111,8 @@ function addToCart(item){
     cartList.push(newItem)
     console.log(cartList)
     // const index =cartList[cartList.length]
+    const jsonCart = JSON.stringify(cartList)
+    localStorage.setItem("@cart-local",jsonCart)
     renderCart(cartList)
 }
 function renderCart(list=[]){
@@ -135,7 +137,19 @@ function renderCart(list=[]){
 function removeToCart(item){
     const index = cartList.findIndex((cart)=>cart.id == item.id)
      cartList.splice(index,1)
-    
+     const jsonCart = JSON.stringify(cartList)
+     localStorage.setItem("@cart-local",jsonCart)
     renderCart(cartList)
     console.log(cartList)
 }
+
+
+const localCart = localStorage.getItem("@cart-local")
+if(localCart){
+    const objCartLocal = JSON.parse(localCart)
+    cartList = objCartLocal
+    renderCart(cartList)
+
+}
+// console.log(objCartLocal)
+

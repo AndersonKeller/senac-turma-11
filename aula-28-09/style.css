@@ -54,3 +54,6 @@ ul{
 .btn-add:hover{
     transform: scale(1.05);
 }
+li:hover{
+    border: 1px solid red;
+}
