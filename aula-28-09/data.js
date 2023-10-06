@@ -12,6 +12,20 @@ export const listProducts=[
             price: 70,
             quantity: 10,
             disponible: true
+        },
+        {
+            id:"3",
+            name:"camiseta grande",
+            price: 70,
+            quantity: 10,
+            disponible: true
+        },
+        {
+            id:"4",
+            name:"chapéu",
+            price: 70,
+            quantity: 10,
+            disponible: true
         }
     ]
 

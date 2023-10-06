@@ -77,6 +77,7 @@ import {listProducts} from  "./data.js"
 // console.log(listProducts)
 function renderProducts(list=[]){
     const ul = document.querySelector("#products")
+    ul.innerHTML=""
     list.forEach((item)=>{
         ul.insertAdjacentHTML("afterbegin",`
         <li>
@@ -153,3 +154,11 @@ if(localCart){
 }
 // console.log(objCartLocal)
 
+const input = document.querySelector("input")
+input.addEventListener("input",(event)=>{
+    const filter = listProducts.filter((item)=>{
+        return item.name.includes(event.target.value)
+    })
+    console.log(filter)
+    renderProducts(filter)
+})
