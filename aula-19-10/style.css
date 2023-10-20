@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+    gap: 8px;
+   
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+ul div{
+    animation: ulAnimation 2s ease;
+}
+li{
+    border-radius: 16px;
+    padding: 8px;
+    background-color: #bdb9b9;
+    cursor: pointer;
+}
+li:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 4px 4px black;
+    transition: all 0.5s ease;
+}
+button{
+    cursor: pointer;
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+}
+#next-page{
+    left: 200px;
+}
+@keyframes ulAnimation {
+    0%{
+        opacity: 0;
+        margin-top: -200px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
